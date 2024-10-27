@@ -72,6 +72,10 @@ This process will create a fully functional Godot project from the game files.
       ```bat
       mklink /J "C:\Users\Blue\Desktop\webfishing\mods" "C:\Users\Blue\Documents\My Mods\mods"
       ```
+
+![image](https://github.com/user-attachments/assets/80113fda-b6f3-4ab3-8f64-b05b28161288)
+
+      
 Now, whenever you edit your mod's files inside of the Decompiled Godot project, the changes will sync to your empty project, this will save you a LOT of trouble later.
 
 You can now close your mod's GodotSteam project by simply exiting GodotSteam.
