@@ -1,6 +1,6 @@
-![image](https://github.com/user-attachments/assets/fe16ba0d-ddc0-41fc-835e-f1df3023d362)![image](https://github.com/user-attachments/assets/9b3de5d2-7c92-43b2-9fe8-1eaf3d6e96ef)# Webfishing Modding Guide
+# Webfishing Modding Guide
 
-This guide will walk you through the process of decompiling the game Webfishing and setting up a modding environment.
+This guide will walk you through the entire process of decompiling the game Webfishing, setting up a modding environment exporting your mod, and using it in-game!
 
 ## Prerequisites
 
