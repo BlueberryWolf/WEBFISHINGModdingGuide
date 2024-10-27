@@ -195,9 +195,7 @@ You can click `Clear` on the output to clear the output at any point
 7. **If you are using any dependencies (BlueberryWolfiAPI, Lure, etc) make sure not to export those with your mod!!**
    * Do this by going to the Resources tab, and changing the export mode to `Export Selected Resources (and dependencies)
    * After which, only select your mod in `mods/` and not any dependencies/APIs!
-   * ![image](https://github.com/user-attachments/assets/8c202301-a8e0-40ad-9443-b76d7ed66e57)
-
-
+   * ![image](https://github.com/user-attachments/assets/b429a40f-95b4-4b1b-b024-65b406f7ab02)
 
 7. Choose **Export PCK/zip** and ensure `Export with Debug` is disabled, then save it into the folder you created in step 1.
 
