@@ -89,48 +89,26 @@ You can now close your mod's GodotSteam project by simply exiting GodotSteam.
 
 3. You can now load the game by pressing F5!
 
-### 5. Example mod, using my [Comfy Mod APIs](https://github.com/BlueberryWolf/APIs)
-This example mod prints the name of any player that joins to the console, then changes their walk_speed to 50.
+# 5. Make your mod!
+### Here are some resources for making a mod
+### DO NOT, I REPEAT, DO NOT, modify the game's built in code in your mod. If you need to do that, try to find another way. Otherwise, you need to use C#, you cannot do this with this guide. C# patching is for more advanced mods. I will make a C# patching guide later
 
-**Make sure** to follow [the instructions]([https://github.com/BlueberryWolf/APIs](https://github.com/BlueberryWolf/APIs?tab=readme-ov-file#developer-usage-for-the-nerds)) to import my API into the project before using this example
+For any mods that interact with the player, use my [PlayerAPI]():
+* Use cases: Accessing a player when they join, editing properties of a player, getting a player by their steam ID, getting a list of players in the game
+* Example: [Making a mod that modifies the player's walk_speed using the PlayerAPI](/resources/PlayerAPI.md)
 
-# Editing Player Properties using my PlayerAPI
-**YET AGAIN, make sure to follow [the instructions]([https://github.com/BlueberryWolf/APIs](https://github.com/BlueberryWolf/APIs?tab=readme-ov-file#developer-usage-for-the-nerds)) to import my API into the project before using this example
+For any mods that add content to the game, use [Lure](https://github.com/Sulayre/WebfishingLure)
+* Custom fish, props, bobbers, colors, titles, eyes, mouths, noses, shirts/undershirts, hats, accessories, species, voices, patterns, items
+* Example [Making a mod that adds a custom item using Lure](/resources/Lure.md)
 
-If you, while debugging and loaded into the world (press F5), switch to the remote scene view,
+For any mods that register hotkeys, use my [Hotkeys API]()
+* Use Cases: Any mods that require a user to press a button on their keyboard, allowing the user to configure those hotkeys in the settings
+* Example [Registering a hotkey that can be modified in the Settings](/resources/HotkeysAPI.md)
 
-You can find the player in the editor at `/root/world/Viewport/main/entities/player`
+For a simple mod setup that modifies the PlayerData, follow this example guide:
+* Use Cases: Basic Mod example, modifying the PlayerData (money, save data (BE CAREFUL), voice pitch, voice speed, max bait, rod luck, rod speed, etc)
+* Example: [Basic mod that modifies the player's data](/resources/PlayerData.md
 
-![image](https://github.com/user-attachments/assets/f3562100-9ef8-4d7c-b5cd-c0b5ec0b994c)
-
-Then, on the right side of the screen, (the inspector), you can find all of the properties about the player
-
-Make sure to switch to "raw" mode
-
-![image](https://github.com/user-attachments/assets/17d57ee8-47cd-4e18-956f-884de75fe493)
-
-Here, you can find every internal property about the player, and they can all be changed via code!
-
-If you use my API, you can simply write `player.` followed by the raw name of the property you wish to modify
-
-Here's an example mod which modifies the player actor's `walk_speed` properties from a default of 3.2 to 50
-
-You can use this mod by editing `res://mods/authorname.modname/main.gd`
-
-![image](https://github.com/user-attachments/assets/8e0c753d-c075-406f-b324-0ba24945b879)
-
-```gd
-var PlayerAPI
-
-func _ready():
-	PlayerAPI = get_node_or_null("/root/BlueberryWolfiAPIs/PlayerAPI")
-	PlayerAPI.connect("_player_added", self, "init_player")
-
-func init_player(player: Actor):
-	print("Player joined: ", PlayerAPI.get_player_name(player))
-  player.walk_speed = 50
-```
-* **NOTE:** You can also modify PlayerData (which is in `/root/PlayerData`) in code via simply typing `PlayerData.` followed by any property you wish to modify
 
 ### 6. Testing Your Mod in GodotSteam
 
