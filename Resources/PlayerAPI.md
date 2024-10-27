@@ -34,6 +34,6 @@ func _ready():
 
 func init_player(player: Actor):
 	print("Player joined: ", PlayerAPI.get_player_name(player))
-  player.walk_speed = 50
+	player.walk_speed = 50
 ```
 * **NOTE:** You can also modify PlayerData (which is in `/root/PlayerData`) in code via simply typing `PlayerData.` followed by any property you wish to modify
