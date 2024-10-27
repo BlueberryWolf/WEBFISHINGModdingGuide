@@ -57,6 +57,7 @@ This process will create a fully functional Godot project from the game files.
    - Replace `authorname` with your username.
    - Replace `modname` with the name of your mod.
 2. Inside `mods/authorname.modname`, create a file called `main.gd`.
+   - **Note**: This is the script file for your mod, which you will be editing later
    - **Note**: GDWeave, the WEBFISHING modloader, run your `mods/authorname.modname/main.gd` file automatically, and mounts your mod in `/root/authorname.modname` (authorname.modname is specified in manifest.json of your mod).
 
 ![image](https://github.com/user-attachments/assets/41676385-fcff-43d4-a109-2c9312eaabef)
@@ -87,31 +88,11 @@ You can now close your mod's GodotSteam project by simply exiting GodotSteam.
 
 ![image](https://github.com/user-attachments/assets/97ed4320-4815-4c8f-b66e-f57e254deb91)
 
-3. You can now load the game by pressing F5!
+3. You can now test the game in the editor by pressing F5!
 
 # 5. Make your mod!
-### Here are some resources for making a mod
-### DO NOT, I REPEAT, DO NOT, modify the game's built in code in your mod. If you need to do that, try to find another way. Otherwise, you need to use C#, you cannot do this with this guide. C# patching is for more advanced mods. I will make a C# patching guide later
-
-### For any mods that interact with the player, use my [PlayerAPI]():
-* Use cases: Accessing a player when they join, editing properties of a player, getting a player by their steam ID, getting a list of players in the game
-* Example: [Making a mod that modifies the player's walk_speed using the PlayerAPI](/resources/PlayerAPI.md)
-
-### For any mods that add content to the game, use [Lure](https://github.com/Sulayre/WebfishingLure)
-* Custom fish, props, bobbers, colors, titles, eyes, mouths, noses, shirts/undershirts, hats, accessories, species, voices, patterns, items
-* Example [Making a mod that adds a custom item using Lure](/resources/Lure.md)
-
-### For any mods that register keybinds, use my [Keybinds API](https://github.com/BlueberryWolf/APIs#keybindsapi)
-* Use Cases: Any mods that require a user to press a button on their keyboard, allowing the user to configure those keybinds in the settings
-* Example [Registering a keybind that can be modified in the Settings](/resources/KeybindsAPI.md)
-
-### For a simple mod setup that modifies the PlayerData, follow this example guide:
-* Use Cases: Basic Mod example, modifying the PlayerData (money, save data (BE CAREFUL), voice pitch, voice speed, max bait, rod luck, rod speed, etc)
-* Example: [Basic mod that modifies the player's data](/resources/PlayerData.md)
-
-### To learn more about Godot 3.5.3 and how it works before making a mod, follow this guide:
-* Use cases: everything. You can make basic mods by following and referencing the guide, but this will help a lot along the way
-* Link: [Godot Basics for Mod Development](/resources/Godot.md)
+### Follow this guide to make your mod!
+Guide: [Make your Mod!](/Resources/MakeYourMod.md)
 
 ### 6. Testing Your Mod in GodotSteam
 
