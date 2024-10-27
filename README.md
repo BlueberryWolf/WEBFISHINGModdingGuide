@@ -230,6 +230,8 @@ Example:
 
 
 
-# The next section is for Developers to learn the best practices to implement while developing mods for GDWeave using GDScript before releasing them to the world
+# [Best Practices](/BestPractices.md)
 
-[Best Practices for WEBFISHING mods using GDWeave](/BestPractices.md)
+The next section is for Developers to learn the best practices to implement while developing mods for GDWeave using GDScript before releasing them to the world
+
+Make sure to follow the [Best Practices for WEBFISHING mods using GDWeave](/BestPractices.md)
