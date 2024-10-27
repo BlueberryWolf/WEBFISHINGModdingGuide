@@ -22,10 +22,10 @@ This guide will walk you through the process of decompiling the game Webfishing 
 
 ![image](https://github.com/user-attachments/assets/8c0e4591-0f96-4a5f-85ad-0188d40818d6)
 
-4. Use GDRE Tools to load the `webfishing.pck` file (do not attempt to decompile the `.exe`).
-5. Do a **Full Recovery** with GDRE Tools
+3. Use GDRE Tools to load the `webfishing.pck` file (do not attempt to decompile the `.exe`).
+4. Do a **Full Recovery** with GDRE Tools
     - **Note**: All game code and assets are stored within `webfishing.pck`, next to the executable file.
-6. Open the folder where you exported the webfishing PCK and keep it open for later! This is important later!
+5. Open the folder where you exported the webfishing PCK and keep it open for later! This is important later!
 
 ![image](https://github.com/user-attachments/assets/43a26111-93ae-4987-b386-18c457576c56)
 
@@ -49,7 +49,10 @@ This process will create a fully functional Godot project from the game files.
    - Replace `modname` with the name of your mod.
 2. Inside `mods/authorname.modname`, create a file called `main.gd`.
    - **Note**: GDWeave, the WEBFISHING modloader, run your `mods/authorname.modname/main.gd` file automatically, and mounts your mod in `/root/authorname.modname` (authorname.modname is specified in manifest.json of your mod).
-3. Ensure that both the decompiled webfishing PCK folder, and the new project folder are open!
+
+![image](https://github.com/user-attachments/assets/41676385-fcff-43d4-a109-2c9312eaabef)
+
+3. Ensure that both the decompiled webfishing PCK folder from earlier, and the new project folder are open!
 4. Open a Command Prompt as Admin by pressing the Windows key and typing "Command Prompt" then right clicking it and running it as admin
 5. Copy the following command into Command Prompt
       - Replace `webfishing` with the full path to your decompiled webfishing folder, then replace `mymod` with the full path to your new mod folder  
@@ -63,7 +66,7 @@ This process will create a fully functional Godot project from the game files.
 Now, whenever you edit your mod's files inside of the Decompiled Godot project, the changes will sync to your empty project, this will save you a LOT of trouble later. 
 You can now close your mod's GodotSteam project by simply exiting GodotSteam.
 
-### 2. Load the Game in GodotSteam
+### 4. Load the Game in GodotSteam
 
 1. Open the decompiled Webfishing project that you've just exported in GodotSteam.
 2. Ensure that there is a "mods" folder in the File Manager. If not, ensure that you've followed Step 2 properly.
@@ -85,7 +88,7 @@ You can now close your mod's GodotSteam project by simply exiting GodotSteam.
      ```
 5. You can now load the game by pressing F5!
 
-### 4. Example mod, using my [Comfy Mod APIs](https://github.com/BlueberryWolf/APIs)
+### 5. Example mod, using my [Comfy Mod APIs](https://github.com/BlueberryWolf/APIs)
 This example mod prints the name of any player that joins to the console, then changes their walk_speed to 50.
 
 **Make sure** to follow [the instructions]([https://github.com/BlueberryWolf/APIs](https://github.com/BlueberryWolf/APIs?tab=readme-ov-file#developer-usage-for-the-nerds)) to import my API into the project before using this example
@@ -124,7 +127,7 @@ func init_player(player: Actor):
 ```
 * **NOTE:** You can also modify PlayerData (which is in `/root/PlayerData`) in code via simply typing `PlayerData.` followed by any property you wish to modify
 
-### 5. Testing Your Mod in Godot
+### 6. Testing Your Mod in Godot
 
 Godot itself does not support mod loading like GDWeave does by default. To test your mod within GodotSteam:
 
@@ -136,7 +139,7 @@ Godot itself does not support mod loading like GDWeave does by default. To test 
 
 You can now press `F5` to launch Webfishing in the engine and test/debug your mod.
 
-### 6. Exporting Your Mod
+### 7. Exporting Your Mod
 
 1. Open the separate project for your mod you created from earlier in GodotSteam
 2. Create a brand new folder inside of `WEBFISHING/GDWeave/Mods` called `authorname.modname`
@@ -151,7 +154,7 @@ You can now press `F5` to launch Webfishing in the engine and test/debug your mo
 6. Choose **Export PCK/zip** and ensure `Export with Debug` is disabled, then save it into the folder you created in step 1.
 
 
-### 7. Adding the Mod to Webfishing
+### 8. Adding the Mod to Webfishing
 
 1. Open the folder you created for your mod in `WEBFISHING/GDWeave/Mods` in Section 6, step 2.
 2. Inside your mod's folder, create a `manifest.json` file with the following content:
@@ -174,4 +177,4 @@ If you're using my Comfy API, like the example project does, make sure to add my
 	"BlueberryWolfi.APIs"
 ]
 ```
-You've just created your very own mod! isn't that amazing??
+You've just created your very own mod! You can now launch WEBFISHING and it will load, and you can share it with other people by sending them the folder to your mod in `WEBFISHING\GDWeave\Mods`. Isn't that amazing??
