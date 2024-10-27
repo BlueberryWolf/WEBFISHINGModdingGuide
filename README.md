@@ -101,14 +101,17 @@ For any mods that add content to the game, use [Lure](https://github.com/Sulayre
 * Custom fish, props, bobbers, colors, titles, eyes, mouths, noses, shirts/undershirts, hats, accessories, species, voices, patterns, items
 * Example [Making a mod that adds a custom item using Lure](/resources/Lure.md)
 
-For any mods that register hotkeys, use my [Hotkeys API]()
-* Use Cases: Any mods that require a user to press a button on their keyboard, allowing the user to configure those hotkeys in the settings
-* Example [Registering a hotkey that can be modified in the Settings](/resources/HotkeysAPI.md)
+For any mods that register keybinds, use my [Keybinds API](https://github.com/BlueberryWolf/APIs#keybindsapi)
+* Use Cases: Any mods that require a user to press a button on their keyboard, allowing the user to configure those keybinds in the settings
+* Example [Registering a keybind that can be modified in the Settings](/resources/KeybindsAPI.md)
 
 For a simple mod setup that modifies the PlayerData, follow this example guide:
 * Use Cases: Basic Mod example, modifying the PlayerData (money, save data (BE CAREFUL), voice pitch, voice speed, max bait, rod luck, rod speed, etc)
-* Example: [Basic mod that modifies the player's data](/resources/PlayerData.md
+* Example: [Basic mod that modifies the player's data](/resources/PlayerData.md)
 
+To learn more about Godot 3.5.3 and how it works before making a mod, follow this guide:
+* Use cases: everything. You can make basic mods by following and referencing the guide, but this will help a lot along the way
+* Link: [Godot Basics for Mod Development](/resources/Godot.md)
 
 ### 6. Testing Your Mod in GodotSteam
 
