@@ -9,8 +9,9 @@ This guide will walk you through the process of decompiling the game Webfishing 
 
 # Development Resources
 
-- **My Comfy APIs**: Makes writing mods a whole lot easier. Allows you to get the current or remote players and variables, and register keybinds which work with the in-game settings. [here](https://github.com/BlueberryWolf/APIs)
-- **Lure API**: **If you want to mod ANY fish, props, bobbers, colors, player customization, accessories, voices, patterns, items, or even maps. [USE LURE!!](https://github.com/Sulayre/WebfishingLure).** 
+- **GodotPCKExplorer**: Allows you to view pck files without having to decompile them.This is useful because it allows you to double click on .pck files and open them easily (I recommend not to do this with webfishing.pck, but mainly to check your own mods) [Get it here](https://github.com/DmitriySalnikov/GodotPCKExplorer) 
+- **My Comfy APIs**: **Makes writing mods a whole lot easier. Allows you to get the current or remote players and variables, and register keybinds which work with the in-game settings.** [USE THE APIS!!](https://github.com/BlueberryWolf/APIs)
+- **Lure API**: **If you want to mod ANY fish, props, bobbers, colors, player customization, accessories, voices, patterns, items, or even maps.** [USE LURE!!](https://github.com/Sulayre/WebfishingLure).** 
 
 ## Steps
 
@@ -18,9 +19,15 @@ This guide will walk you through the process of decompiling the game Webfishing 
 
 1. Download the latest version of **[GDRE Tools for Windows.](https://github.com/bruvzg/gdsdecomp/releases/latest)**
 2. Locate `webfishing.pck` inside the `WEBFISHING` folder where Webfishing is installed via Steam.
-3. Use GDRE Tools to load the `webfishing.pck` file (do not attempt to decompile the `.exe`).
-4. Do a **Full Recovery** with GDRE Tools
+
+![image](https://github.com/user-attachments/assets/8c0e4591-0f96-4a5f-85ad-0188d40818d6)
+
+4. Use GDRE Tools to load the `webfishing.pck` file (do not attempt to decompile the `.exe`).
+5. Do a **Full Recovery** with GDRE Tools
     - **Note**: All game code and assets are stored within `webfishing.pck`, next to the executable file.
+
+![image](https://github.com/user-attachments/assets/0020aae5-bec7-4362-907a-5e4e1e70f040)
+
 
 This process will create a fully functional Godot project from the game files.
 
