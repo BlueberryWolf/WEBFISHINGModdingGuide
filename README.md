@@ -11,7 +11,7 @@ This guide will walk you through the process of decompiling the game Webfishing 
 
 - **GodotPCKExplorer**: Allows you to view pck files without having to decompile them.This is useful because it allows you to double click on .pck files and open them easily (I recommend not to do this with webfishing.pck, but mainly to check your own mods) [Get it here](https://github.com/DmitriySalnikov/GodotPCKExplorer) 
 - **My Comfy APIs**: **Makes writing mods a whole lot easier. Allows you to get the current or remote players and variables, and register keybinds which work with the in-game settings.** [USE THE APIS!!](https://github.com/BlueberryWolf/APIs)
-- **Lure API**: **If you want to mod ANY fish, props, bobbers, colors, player customization, accessories, voices, patterns, items, or even maps.** [USE LURE!!](https://github.com/Sulayre/WebfishingLure).** 
+- **Lure API**: **If you want to mod ANY fish, props, bobbers, colors, player customization, accessories, voices, patterns, items, or even maps.** [USE LURE!!](https://github.com/Sulayre/WebfishingLure).
 
 ## Steps
 
