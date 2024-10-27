@@ -127,17 +127,24 @@ func init_player(player: Actor):
 ```
 * **NOTE:** You can also modify PlayerData (which is in `/root/PlayerData`) in code via simply typing `PlayerData.` followed by any property you wish to modify
 
-### 6. Testing Your Mod in Godot
+### 6. Testing Your Mod in GodotSteam
 
 Godot itself does not support mod loading like GDWeave does by default. To test your mod within GodotSteam:
 
 1. Go to `Project > Project Settings` in the top menu.
-2. Select the `AutoLoad` tab.
-3. Under "Path," choose the `main.gd` file within your mod folder.
-4. Name it with your mod name.
-   - This setup allows GodotSteam to load your mod within the decompiled project.
 
-You can now press `F5` to launch Webfishing in the engine and test/debug your mod.
+![image](https://github.com/user-attachments/assets/58ef412f-688c-4ba1-8dda-ae8abc952d9f)
+
+
+2. Select the `AutoLoad` tab.
+3. Under "Path," click the folder icon, and select your `main.gd` file within `mods/authorname.modname/main.gd`.
+4. Under "Name," name it with your mod name `AuthorName.ModName`, but remove the dot here!
+   - This setup allows GodotSteam to load your mod within the decompiled project. This works by creating a new node in "/root/AuthorName.ModName" with your main.gd script attached to it, simulating how GDWeave loads your mod in game.
+5. Once you've done all of this, click Add,
+
+![image](https://github.com/user-attachments/assets/de6da746-55af-4991-8f82-bf4ccba4cfee)
+
+**You can now press `F5` to launch Webfishing in the engine and test/debug your mod.**
 
 ### 7. Exporting Your Mod
 
