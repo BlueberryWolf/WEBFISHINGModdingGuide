@@ -174,22 +174,29 @@ You can click `Clear` on the output to clear the output at any point
 
 ### 7. Exporting Your Mod
 
-1. Open the separate project for your mod you created from earlier in GodotSteam
-2. Create a brand new folder inside of `WEBFISHING/GDWeave/Mods` called `authorname.modname`
-3. Go to `Project > Export` and set up a Windows export template.
+1. Close your Decompiled Webfishing project, and open GodotSteam Editor again to open your mod's **own GodotSteam project you created in Section 2 Step 6**
+2. Create a brand new folder inside of `WEBFISHING/GDWeave/Mods` (your steam installation folder of WEBFISHING) called `authorname.modname`
+3. Go to `Project > Export`.
+
+4. If you see this at the bottom of your screen
+
+![image](https://github.com/user-attachments/assets/4179f439-3e43-40c3-94f2-37d4503a3941)
+
+* Click Manage Export Templates->Download & Install
+
+5. Create a new Windows Export Template
 
 ![image](https://github.com/user-attachments/assets/56303782-919b-4470-a793-dd27de20b42d)
 
-4. Under **Options**, disable `Runnable`.
+6. Under **Options**, disable `Runnable`.
 
 ![image](https://github.com/user-attachments/assets/cf216ecf-d8d6-426b-b54a-992bd9f3f858)
 
-6. Choose **Export PCK/zip** and ensure `Export with Debug` is disabled, then save it into the folder you created in step 1.
-
+7. Choose **Export PCK/zip** and ensure `Export with Debug` is disabled, then save it into the folder you created in step 1.
 
 ### 8. Adding the Mod to Webfishing
 
-1. Open the folder you created for your mod in `WEBFISHING/GDWeave/Mods` in Section 6, step 2.
+1. Open the mod export folder you created for your mod earlier in `WEBFISHING/GDWeave/Mods` in Section 6, step 2.
 2. Inside your mod's folder, create a `manifest.json` file with the following content:
 
    ```json
