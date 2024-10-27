@@ -89,6 +89,10 @@ You can now close your mod's GodotSteam project by simply exiting GodotSteam.
 This example mod prints the name of any player that joins to the console, then changes their walk_speed to 50.
 
 **Make sure** to follow [the instructions]([https://github.com/BlueberryWolf/APIs](https://github.com/BlueberryWolf/APIs?tab=readme-ov-file#developer-usage-for-the-nerds)) to import my API into the project before using this example
+
+# Editing Player Properties using my PlayerAPI
+**YET AGAIN, make sure to follow [the instructions]([https://github.com/BlueberryWolf/APIs](https://github.com/BlueberryWolf/APIs?tab=readme-ov-file#developer-usage-for-the-nerds)) to import my API into the project before using this example
+
 If you, while debugging and loaded into the world (press F5), switch to the remote scene view,
 You can find the player in the editor at `/root/world/Viewport/main/entities/player`
 
