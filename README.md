@@ -233,10 +233,8 @@ Example:
 
 **You've just created your very own mod! You can now launch WEBFISHING and it will load, and you can share it with other people by sending them the folder to your mod in `WEBFISHING\GDWeave\Mods`. Isn't that amazing??**
 
-
-
-# [Best Practices](/BestPractices.md)
+# [Best Practices](/Resources/BestPractices.md)
 
 The next section is for Developers to learn the best practices to implement while developing mods for GDWeave using GDScript before releasing them to the world
 
-Make sure to follow the [Best Practices for WEBFISHING mods using GDWeave](/BestPractices.md)
+Make sure to follow the [Best Practices for WEBFISHING mods using GDWeave](/Resources/BestPractices.md)
