@@ -226,7 +226,10 @@ Example:
 
 ![image](https://github.com/user-attachments/assets/42b92943-fb64-4a2f-8ee5-e5521bf648c1)
 
-You've just created your very own mod! You can now launch WEBFISHING and it will load, and you can share it with other people by sending them the folder to your mod in `WEBFISHING\GDWeave\Mods`. Isn't that amazing??
+**You've just created your very own mod! You can now launch WEBFISHING and it will load, and you can share it with other people by sending them the folder to your mod in `WEBFISHING\GDWeave\Mods`. Isn't that amazing??**
 
-The next section is for Developers to learn the best practices to implement while developing mods for GDWeave using GDScript before releasing them to the world
+
+
+# The next section is for Developers to learn the best practices to implement while developing mods for GDWeave using GDScript before releasing them to the world
+
 [Best Practices for WEBFISHING mods using GDWeave](/BestPractices.md)
