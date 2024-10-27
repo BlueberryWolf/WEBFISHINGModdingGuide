@@ -63,7 +63,8 @@ This process will create a fully functional Godot project from the game files.
       ```bat
       mklink /J "C:\Users\Blue\Desktop\webfishing\mods" "C:\Users\Blue\Documents\My Mods\mods"
       ```
-Now, whenever you edit your mod's files inside of the Decompiled Godot project, the changes will sync to your empty project, this will save you a LOT of trouble later. 
+Now, whenever you edit your mod's files inside of the Decompiled Godot project, the changes will sync to your empty project, this will save you a LOT of trouble later.
+
 You can now close your mod's GodotSteam project by simply exiting GodotSteam.
 
 ### 4. Load the Game in GodotSteam
@@ -97,19 +98,23 @@ This example mod prints the name of any player that joins to the console, then c
 **YET AGAIN, make sure to follow [the instructions]([https://github.com/BlueberryWolf/APIs](https://github.com/BlueberryWolf/APIs?tab=readme-ov-file#developer-usage-for-the-nerds)) to import my API into the project before using this example
 
 If you, while debugging and loaded into the world (press F5), switch to the remote scene view,
+
 You can find the player in the editor at `/root/world/Viewport/main/entities/player`
 
 ![image](https://github.com/user-attachments/assets/f3562100-9ef8-4d7c-b5cd-c0b5ec0b994c)
 
 Then, on the right side of the screen, (the inspector), you can find all of the properties about the player
+
 Make sure to switch to "raw" mode
 
 ![image](https://github.com/user-attachments/assets/17d57ee8-47cd-4e18-956f-884de75fe493)
 
 Here, you can find every internal property about the player, and they can all be changed via code!
+
 If you use my API, you can simply write `player.` followed by the raw name of the property you wish to modify
 
 Here's an example mod which modifies the player actor's `walk_speed` properties from a default of 3.2 to 50
+
 You can use this mod by editing `res://mods/authorname.modname/main.gd`
 
 ![image](https://github.com/user-attachments/assets/8e0c753d-c075-406f-b324-0ba24945b879)
@@ -178,6 +183,7 @@ Godot itself does not support mod loading like GDWeave does by default. To test 
    - Replace `authorname` with your username.
    - Replace `modname` with the name of your mod.
 **Note:** The Dependencies field can be removed if your mod does not have any dependencies.
+
 If you're using my Comfy API, like the example project does, make sure to add my API to your manifest.json!
 ```json
 "Dependencies": [
