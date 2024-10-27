@@ -26,8 +26,7 @@ This guide will walk you through the process of decompiling the game Webfishing 
 5. Do a **Full Recovery** with GDRE Tools
     - **Note**: All game code and assets are stored within `webfishing.pck`, next to the executable file.
 
-![image](https://github.com/user-attachments/assets/0020aae5-bec7-4362-907a-5e4e1e70f040)
-
+![image](https://github.com/user-attachments/assets/43a26111-93ae-4987-b386-18c457576c56)
 
 This process will create a fully functional Godot project from the game files.
 
@@ -48,6 +47,7 @@ This process will create a fully functional Godot project from the game files.
      ```gd
      var INIT = Steam.steamInit(true, 3146520)
      ```
+6. You can now load the game by pressing F5!
 
 ### 3. Set Up the Mod Directory Structure
 
