@@ -133,25 +133,40 @@ You can now press `F5` to launch Webfishing in the engine and test/debug your mo
 
 ### 6. Exporting Your Mod
 
-1. Create a new Godot project specifically for your mod.
-2. Copy and paste the `mods` folder (from Step 3) into this new project.
+1. Open the separate project for your mod you created from earlier in GodotSteam
+2. Create a brand new folder inside of `WEBFISHING/GDWeave/Mods` called `authorname.modname`
 3. Go to `Project > Export` and set up a Windows export template.
+
+![image](https://github.com/user-attachments/assets/56303782-919b-4470-a793-dd27de20b42d)
+
 4. Under **Options**, disable `Runnable`.
-5. Choose **Export PCK/zip** and ensure `Export with Debug` is disabled.
+
+![image](https://github.com/user-attachments/assets/cf216ecf-d8d6-426b-b54a-992bd9f3f858)
+
+6. Choose **Export PCK/zip** and ensure `Export with Debug` is disabled, then save it into the folder you created in step 1.
+
 
 ### 7. Adding the Mod to Webfishing
 
-1. Navigate to the Webfishing directory in your Steam installation.
-2. In `WEBFISHING/GDWeave/Mods`, create a new folder for your mod and add your `.pck` file.
-3. Inside your mod's folder, create a `manifest.json` file with the following content:
+1. Open the folder you created for your mod in `WEBFISHING/GDWeave/Mods` in Section 6, step 2.
+2. Inside your mod's folder, create a `manifest.json` file with the following content:
 
    ```json
    {
-     "Id": "AuthorName.ModName",
-     "PackPath": "ModName.pck",
+     "Id": "authorname.modname",
+     "PackPath": "modname.pck",
      "Dependencies": [
-       "AuthorName.DependencyName"
+       "authorname.dependencyname"
      ]
    }
    ```
+   - Replace `authorname` with your username.
+   - Replace `modname` with the name of your mod.
 **Note:** The Dependencies field can be removed if your mod does not have any dependencies.
+If you're using my Comfy API, like the example project does, make sure to add my API to your manifest.json!
+```json
+"Dependencies": [
+	"BlueberryWolfi.APIs"
+]
+```
+You've just created your very own mod! isn't that amazing??
