@@ -185,9 +185,17 @@ Godot itself does not support mod loading like GDWeave does by default. To test 
 **Note:** The Dependencies field can be removed if your mod does not have any dependencies.
 
 If you're using my Comfy API, like the example project does, make sure to add my API to your manifest.json!
+
 ```json
 "Dependencies": [
 	"BlueberryWolfi.APIs"
 ]
 ```
+
+Example:
+
+![image](https://github.com/user-attachments/assets/78989e4c-2a7f-49f7-a651-6652204826e4)
+
+![image](https://github.com/user-attachments/assets/42b92943-fb64-4a2f-8ee5-e5521bf648c1)
+
 You've just created your very own mod! You can now launch WEBFISHING and it will load, and you can share it with other people by sending them the folder to your mod in `WEBFISHING\GDWeave\Mods`. Isn't that amazing??
