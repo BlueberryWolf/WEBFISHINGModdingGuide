@@ -129,7 +129,7 @@ func init_player(player: Actor):
 * **NOTE:** You can also modify PlayerData (which is in `/root/PlayerData`) in code via simply typing `PlayerData.` followed by any property you wish to modify
 
 ### 7. Common practices for Mod Development
-# 1. Loading Assets
+1. Loading Assets
 If you want to load custom resources, for example, to use with [Lure](https://github.com/Sulayre/WebfishingLure), create an "Assets" folder inside your mod folder
 
 Example: `res://mods/AuthorName.ExampleMod/Assets`
@@ -149,6 +149,8 @@ func _ready():
 ```
 
 If you're using Lure, it loads assets differently.
+
+2. Loading Assets with Lure
 
 Lure allows you to load asset paths with 3 different prefixes:
 
