@@ -25,20 +25,56 @@ This guide will walk you through the process of decompiling the game Webfishing 
 4. Use GDRE Tools to load the `webfishing.pck` file (do not attempt to decompile the `.exe`).
 5. Do a **Full Recovery** with GDRE Tools
     - **Note**: All game code and assets are stored within `webfishing.pck`, next to the executable file.
+6. Open the folder where you exported the webfishing PCK and keep it open for later! This is important later!
 
 ![image](https://github.com/user-attachments/assets/43a26111-93ae-4987-b386-18c457576c56)
 
 This process will create a fully functional Godot project from the game files.
 
+### 2. In GodotSteam, make a new project specifically for your mod,
+1. Download **[GodotSteam v3.25 for Windows](https://github.com/GodotSteam/GodotSteam/releases/download/v3.25/win64-g353-s159-gs325.zip)**.
+2. Create a new project specifically for your mod
+![image](https://github.com/user-attachments/assets/dad569f6-508c-452b-a368-6f726e8ef83b)
+
+3. Once you've created your new mod, right click on `res://` and click `Open in File Manager`
+
+![image](https://github.com/user-attachments/assets/15caedca-95a1-4305-b48b-5ea671140937)
+
+4. Keep this folder open for Section 3, you will thank me later!
+
+### 3. Set Up the Mod Directory Structure
+
+1. In the root of your Mod Project, create a new folder structure: `mods/authorname.modname`.
+   - Replace `authorname` with your username.
+   - Replace `modname` with the name of your mod.
+2. Inside `mods/authorname.modname`, create a file called `main.gd`.
+   - **Note**: GDWeave, the WEBFISHING modloader, run your `mods/authorname.modname/main.gd` file automatically, and mounts your mod in `/root/authorname.modname` (authorname.modname is specified in manifest.json of your mod).
+3. Ensure that both the decompiled webfishing PCK folder, and the new project folder are open!
+4. Open a Command Prompt as Admin by pressing the Windows key and typing "Command Prompt" then right clicking it and running it as admin
+5. Copy the following command into Command Prompt
+      - Replace `webfishing` with the full path to your decompiled webfishing folder, then replace `mymod` with the full path to your new mod folder  
+      ```bat
+      mklink /J "webfishing/mods" "mymod/mods"
+      ```
+      Example:
+      ```bat
+      mklink /J "C:\Users\Blue\Desktop\webfishing\mods" "C:\Users\Blue\Documents\My Mods\mods"
+      ```
+Now, whenever you edit your mod's files inside of the Decompiled Godot project, the changes will sync to your empty project, this will save you a LOT of trouble later. 
+You can now close your mod's GodotSteam project by simply exiting GodotSteam.
+
 ### 2. Load the Game in GodotSteam
 
-1. Download **[GodotSteam v3.25 for Windows](https://github.com/GodotSteam/GodotSteam/releases/download/v3.25/win64-g353-s159-gs325.zip)**.
-2. Open the decompiled Webfishing project that you've just exported in GodotSteam.
+1. Open the decompiled Webfishing project that you've just exported in GodotSteam.
+2. Ensure that there is a "mods" folder in the File Manager. If not, ensure that you've followed Step 2 properly.
+
+![image](https://github.com/user-attachments/assets/97ed4320-4815-4c8f-b66e-f57e254deb91)
+
 3. Locate `SteamNetwork.gd` and open it
 
    ![image](https://github.com/user-attachments/assets/50edada2-b6b2-4a08-80d1-50ebe225cfcc)
    
-5. Modify the `SteamNetwork.gd` file as follows:
+4. Modify the `SteamNetwork.gd` file as follows:
    - Find **line 56** and change:
      ```gd
      var INIT = Steam.steamInit()
@@ -47,15 +83,7 @@ This process will create a fully functional Godot project from the game files.
      ```gd
      var INIT = Steam.steamInit(true, 3146520)
      ```
-6. You can now load the game by pressing F5!
-
-### 3. Set Up the Mod Directory Structure
-
-1. In the root of the decompiled project, create a new folder structure: `mods/authorname.modname`.
-   - Replace `authorname` with your username.
-   - Replace `modname` with the name of your mod.
-3. Inside `mods/authorname.modname`, create a script called `main.gd`.
-   - **Note**: GDWeave, the modloader, loads mods from `mods/authorname.modname/main.gd` (authorname.modname is specified in manifest.json of your mod).
+5. You can now load the game by pressing F5!
 
 ### 4. Example mod, using my [Comfy Mod APIs](https://github.com/BlueberryWolf/APIs)
 This example mod prints the name of any player that joins to the console, then changes their walk_speed to 50.
@@ -74,6 +102,7 @@ Here, you can find every internal property about the player, and they can all be
 If you use my API, you can simply write `player.` followed by the raw name of the property you wish to modify
 
 Here's an example mod which modifies the player actor's `walk_speed` properties from a default of 3.2 to 50
+You can use this mod by editing `res://mods/authorname.modname/main.gd`
 
 ![image](https://github.com/user-attachments/assets/8e0c753d-c075-406f-b324-0ba24945b879)
 
