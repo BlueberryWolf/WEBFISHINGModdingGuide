@@ -29,6 +29,7 @@ This process will create a fully functional Godot project from the game files.
 1. Download **[GodotSteam v3.25 for Windows](https://github.com/GodotSteam/GodotSteam/releases/download/v3.25/win64-g353-s159-gs325.zip)**.
 2. Open the decompiled Webfishing project that you've just exported in GodotSteam.
 3. Locate `SteamNetwork.gd` and open it
+
    ![image](https://github.com/user-attachments/assets/50edada2-b6b2-4a08-80d1-50ebe225cfcc)
    
 5. Modify the `SteamNetwork.gd` file as follows:
