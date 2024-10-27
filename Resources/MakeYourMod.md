@@ -12,7 +12,7 @@
 
 ### For any mods that add content to the game, use [Lure](https://github.com/Sulayre/WebfishingLure)
 * Custom fish, props, bobbers, colors, titles, eyes, mouths, noses, shirts/undershirts, hats, accessories, species, voices, patterns, items
-* Example [Making a mod that adds a custom item using Lure](/Resources/Lure.md)
+* Example [Making a mod that adds a custom item using Lure](/Resources/CustomItemLure.md)
 
 ### For any mods that register keybinds, use my [Keybinds API](https://github.com/BlueberryWolf/APIs#keybindsapi)
 * Use Cases: Any mods that require a user to press a button on their keyboard, allowing the user to configure those keybinds in the settings
