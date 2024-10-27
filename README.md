@@ -7,13 +7,19 @@ This guide will walk you through the process of decompiling the game Webfishing 
 - **GDRE Tools**: For decompiling the game files ([Download GDRE Tools](https://github.com/bruvzg/gdsdecomp/releases/latest))
 - **GodotSteam v3.25**: For running the decompiled game in Godot ([Download GodotSteam v3.25 For Windows](https://github.com/GodotSteam/GodotSteam/releases/download/v3.25/win64-g353-s159-gs325.zip))
 
+# Development Resources
+
+- **My Comfy APIs**: Makes writing mods a whole lot easier. Allows you to get the current or remote players and variables, and register keybinds which work with the in-game settings. [here](https://github.com/BlueberryWolf/APIs)
+- **Lure API**: **If you want to mod ANY fish, props, bobbers, colors, player customization, accessories, voices, patterns, items, or even maps. [USE LURE!!](https://github.com/Sulayre/WebfishingLure).** 
+
 ## Steps
 
 ### 1. Decompile Webfishing
 
 1. Download the latest version of **[Download GDRE Tools for Windows](https://github.com/bruvzg/gdsdecomp/releases/latest)** for Windows.
 2. Locate `webfishing.pck` inside the `WEBFISHING` folder where Webfishing is installed via Steam.
-3. Use GDRE Tools to decompile the `webfishing.pck` file (do not attempt to decompile the `.exe`).
+3. Use GDRE Tools to load the `webfishing.pck` file (do not attempt to decompile the `.exe`).
+4. Do a **Full Recovery** with GDRE Tools
     - **Note**: All game code and assets are stored within `webfishing.pck`, next to the executable file.
 
 This process will create a fully functional Godot project from the game files.
@@ -21,8 +27,11 @@ This process will create a fully functional Godot project from the game files.
 ### 2. Load the Game in GodotSteam
 
 1. Download **[GodotSteam v3.25 for Windows](https://github.com/GodotSteam/GodotSteam/releases/download/v3.25/win64-g353-s159-gs325.zip)**.
-2. Open the decompiled Webfishing project in GodotSteam.
-3. Modify the `SteamNetwork.gd` file as follows:
+2. Open the decompiled Webfishing project that you've just exported in GodotSteam.
+3. Locate `SteamNetwork.gd` and open it
+   ![image](https://github.com/user-attachments/assets/50edada2-b6b2-4a08-80d1-50ebe225cfcc)
+   
+5. Modify the `SteamNetwork.gd` file as follows:
    - Find **line 56** and change:
      ```gd
      var INIT = Steam.steamInit()
@@ -34,13 +43,15 @@ This process will create a fully functional Godot project from the game files.
 
 ### 3. Set Up the Mod Directory Structure
 
-1. In the root of the decompiled project, create a new folder structure: `mods/modname`.
+1. In the root of the decompiled project, create a new folder structure: `mods/authoorname.modname`.
+   - Replace `authorname` with your username.
    - Replace `modname` with the name of your mod.
-2. Inside `mods/modname`, create a script called `main.gd`.
+3. Inside `mods/authorname.modname`, create a script called `main.gd`.
    - **Note**: GDWeave, the modloader, loads mods from `mods/modname/main.gd`.
 
 ### 4. Example mod, using my [Comfy Mod APIs](https://github.com/BlueberryWolf/APIs)
-This example mod prints the naem of any player that joins to the console.
+This example mod prints the name of any player that joins to the console, then changes their walk_speed to 50.
+**Make sure** to follow [the instructions]([https://github.com/BlueberryWolf/APIs](https://github.com/BlueberryWolf/APIs?tab=readme-ov-file#developer-usage-for-the-nerds) to import my API into the project before using this example
 If you, while debugging and loaded into the world (press F5), switch to the remote scene view,
 You can find the player in the editor at `/root/world/Viewport/main/entities/player`
 
@@ -99,10 +110,10 @@ You can now press `F5` to launch Webfishing in the engine and test/debug your mo
 
    ```json
    {
-     "Id": "DeveloperName.ModName",
+     "Id": "AuthorName.ModName",
      "PackPath": "ModName.pck",
      "Dependencies": [
-       "DeveloperName.Dependency"
+       "AuthorName.DependencyName"
      ]
    }
    ```
