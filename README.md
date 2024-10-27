@@ -192,6 +192,12 @@ You can click `Clear` on the output to clear the output at any point
 
 ![image](https://github.com/user-attachments/assets/cf216ecf-d8d6-426b-b54a-992bd9f3f858)
 
+7. **If you are using any dependencies (BlueberryWolfiAPI, Lure, etc) make sure not to export those with your mod!!**
+   * Do this by going to the Resources tab, and changing the export mode to `Export Selected Resources (and dependencies)
+   * After which, only select your mod in `mods/` and not any dependencies/APIs!
+   * ![image](https://github.com/user-attachments/assets/8defe4b0-0c14-41ed-b8c2-4089db9ba432)
+
+
 7. Choose **Export PCK/zip** and ensure `Export with Debug` is disabled, then save it into the folder you created in step 1.
 
 ### 8. Adding the Mod to Webfishing
