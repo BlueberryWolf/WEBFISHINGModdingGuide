@@ -1,4 +1,4 @@
-# Webfishing Modding Guide
+![image](https://github.com/user-attachments/assets/fe16ba0d-ddc0-41fc-835e-f1df3023d362)![image](https://github.com/user-attachments/assets/9b3de5d2-7c92-43b2-9fe8-1eaf3d6e96ef)# Webfishing Modding Guide
 
 This guide will walk you through the process of decompiling the game Webfishing and setting up a modding environment.
 
@@ -143,9 +143,30 @@ Godot itself does not support mod loading like GDWeave does by default. To test 
    - This setup allows GodotSteam to load your mod within the decompiled project. This works by creating a new node in "/root/AuthorName.ModName" with your main.gd script attached to it, simulating how GDWeave loads your mod in game.
 5. Once you've done all of this, click Add,
 
-![image](https://github.com/user-attachments/assets/de6da746-55af-4991-8f82-bf4ccba4cfee)
+![image](https://github.com/user-attachments/assets/6ab452a9-b18d-43ec-b7e6-5603e05689b6)
+
+The next instructions are entirely optional, but make development and finding errors in your mods MUCH EASIER by removing the game's built in print spam!!
+
+6. Make sure you're in the "Script" tab at the top middle of the screen
+
+7. Press Ctrl+Shift+R (CMD+Shift+R on Mac) to open find and replace
+
+8. Set Find: to `print(` and set Replace: to `pass #print#(`
+
+![image](https://github.com/user-attachments/assets/2e9a3990-9c3f-4fed-a030-b93260f48c87)
+
+9. Click `Replace...`, then click `Replace All (NO UNDO)`  
+
+Now, if you `print("anything to the console")` or get any errors, you can find them in the output section at the very bottom of your screen
+
+You can click `Clear` on the output to clear the output at any point
+
+![image](https://github.com/user-attachments/assets/810f567a-234f-425d-89e6-eead0f8034bb)
+
 
 **You can now press `F5` to launch Webfishing in the engine and test/debug your mod.**
+
+**If you did everything correctly, the game should launch and start normally!**
 
 ### 7. Exporting Your Mod
 
