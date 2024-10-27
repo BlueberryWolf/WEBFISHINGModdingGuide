@@ -221,7 +221,7 @@ The next section is for Developers to learn the best practices to implement whil
 
 # Best practices for Mod Development
 
-1. AVOID PATCHING CODE UNLESS NECESSARY
+### 1. AVOID PATCHING CODE UNLESS NECESSARY
 
 Patches are very nice, because they allow you to modify the game's internal code, and directly implement your custom functionality into them.
 
@@ -231,7 +231,7 @@ This is preferred, because patching code can easily break with a game update, bu
 
 **Do not attempt to patch code inside of GDScript, patches to the game's internal code are made in C#** which I will make a separate guide for later, for more advanced mods
 
-2. Loading Assets
+### 2. Loading Assets
 
 If you are trying to load assets with [Lure](https://github.com/Sulayre/WebfishingLure), go to the next section.
 
@@ -258,7 +258,7 @@ func _ready():
 
 If you're using Lure, it loads assets differently.
 
-3. Loading Assets with Lure
+### 3. Loading Assets with Lure
 
 Lure allows you to load asset paths with 3 different prefixes:
 
