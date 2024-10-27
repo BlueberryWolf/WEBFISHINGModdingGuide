@@ -51,11 +51,11 @@ This process will create a fully functional Godot project from the game files.
 
 ### 3. Set Up the Mod Directory Structure
 
-1. In the root of the decompiled project, create a new folder structure: `mods/authoorname.modname`.
+1. In the root of the decompiled project, create a new folder structure: `mods/authorname.modname`.
    - Replace `authorname` with your username.
    - Replace `modname` with the name of your mod.
 3. Inside `mods/authorname.modname`, create a script called `main.gd`.
-   - **Note**: GDWeave, the modloader, loads mods from `mods/modname/main.gd`.
+   - **Note**: GDWeave, the modloader, loads mods from `mods/authorname.modname/main.gd` (authorname.modname is specified in manifest.json of your mod).
 
 ### 4. Example mod, using my [Comfy Mod APIs](https://github.com/BlueberryWolf/APIs)
 This example mod prints the name of any player that joins to the console, then changes their walk_speed to 50.
