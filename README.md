@@ -33,10 +33,19 @@ This process will create a fully functional Godot project from the game files.
 
 ### 2. In GodotSteam, make a new project specifically for your mod,
 1. Download **[GodotSteam v3.25 for Windows](https://github.com/GodotSteam/GodotSteam/releases/download/v3.25/win64-g353-s159-gs325.zip)**.
-2. Create a new project specifically for your mod
+2. **EXTRACT** GodotSteam `win64-g353-s159-gs325.zip` and open that folder
+3. Create a new text file titled `steam_appid.txt`
+4. Open the newly created `steam_appid.txt` in notepad or your favourite text editor, and set the contents to only `3146520`, then save it.
+
+![image](https://github.com/user-attachments/assets/45b168cc-b447-4db8-bc15-5c6ead1b4fbd)
+
+![image](https://github.com/user-attachments/assets/4739c706-6c6f-44b3-9f9e-5ec945826524)
+
+5. Open `godotsteam.353.editor.windows.64.exe` to open the GodotSteam editor
+6. Create a new project specifically for your mod
 ![image](https://github.com/user-attachments/assets/dad569f6-508c-452b-a368-6f726e8ef83b)
 
-3. Once you've created your new mod, right click on `res://` and click `Open in File Manager`
+7. Once you've created your new mod, right click on `res://` and click `Open in File Manager`
 
 ![image](https://github.com/user-attachments/assets/15caedca-95a1-4305-b48b-5ea671140937)
 
@@ -74,20 +83,7 @@ You can now close your mod's GodotSteam project by simply exiting GodotSteam.
 
 ![image](https://github.com/user-attachments/assets/97ed4320-4815-4c8f-b66e-f57e254deb91)
 
-3. Locate `SteamNetwork.gd` and open it
-
-   ![image](https://github.com/user-attachments/assets/50edada2-b6b2-4a08-80d1-50ebe225cfcc)
-   
-4. Modify the `SteamNetwork.gd` file as follows:
-   - Find **line 56** and change:
-     ```gd
-     var INIT = Steam.steamInit()
-     ```
-     to:
-     ```gd
-     var INIT = Steam.steamInit(true, 3146520)
-     ```
-5. You can now load the game by pressing F5!
+3. You can now load the game by pressing F5!
 
 ### 5. Example mod, using my [Comfy Mod APIs](https://github.com/BlueberryWolf/APIs)
 This example mod prints the name of any player that joins to the console, then changes their walk_speed to 50.
