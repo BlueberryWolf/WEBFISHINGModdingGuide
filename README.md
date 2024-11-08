@@ -18,14 +18,15 @@ This guide will walk you through the entire process of decompiling the game Webf
 ### 1. Decompile Webfishing
 
 1. Download the latest version of **[GDRE Tools for Windows.](https://github.com/bruvzg/gdsdecomp/releases/latest)**
-2. Locate `webfishing.pck` inside the `WEBFISHING` folder where Webfishing is installed via Steam.
+2. Locate `webfishing.exe` inside the `WEBFISHING` folder where Webfishing is installed via Steam.
 
 ![image](https://github.com/user-attachments/assets/8c0e4591-0f96-4a5f-85ad-0188d40818d6)
 
-3. Use GDRE Tools to load the `webfishing.pck` file (do not attempt to decompile the `.exe`).
+3. Use GDRE Tools to load the `webfishing.exe` file (do not attempt to decompile the `.exe`).
 4. Do a **Full Recovery** with GDRE Tools
-    - **Note**: All game code and assets are stored within `webfishing.pck`, next to the executable file.
-5. Open the folder where you exported the webfishing PCK and keep it open for later! This is important later!
+    - **Note**: All game code and assets are stored within `webfishing.exe`
+    - **Note**: This was previously in a file titled `webfishing.pck` which does not exist anymore, but may possibly be where to find it at some other point?
+5. Open the folder where you exported the webfishing exe and keep it open for later! This is important later!
 
 ![image](https://github.com/user-attachments/assets/43a26111-93ae-4987-b386-18c457576c56)
 
