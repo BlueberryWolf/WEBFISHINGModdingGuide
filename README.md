@@ -34,7 +34,7 @@ This process will create a fully functional Godot project from the game files.
 
 ### 2. In GodotSteam, make a new project specifically for your mod,
 1. Download **[GodotSteam v3.21](https://github.com/GodotSteam/GodotSteam/releases/tag/v3.21)**.
-2. **EXTRACT** GodotSteam `win64-g353-s159-gs325.zip` and open that folder
+2. **EXTRACT** GodotSteam `win64-g352-s158-gs321.zip` and open that folder
 3. Create a new text file titled `steam_appid.txt`
 4. Open the newly created `steam_appid.txt` in notepad or your favourite text editor, and set the contents to only `3146520`, then save it.
 
@@ -42,7 +42,7 @@ This process will create a fully functional Godot project from the game files.
 
 ![image](https://github.com/user-attachments/assets/4739c706-6c6f-44b3-9f9e-5ec945826524)
 
-5. Open `godotsteam.353.editor.windows.64.exe` to open the GodotSteam editor
+5. Open `windows-352-editor-64bit.exe` to open the GodotSteam editor
 6. Create a new project specifically for your mod
 ![image](https://github.com/user-attachments/assets/dad569f6-508c-452b-a368-6f726e8ef83b)
 
