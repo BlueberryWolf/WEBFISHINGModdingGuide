@@ -20,7 +20,8 @@ This guide will walk you through the entire process of decompiling the game Webf
 1. Download the latest version of **[GDRE Tools for Windows.](https://github.com/bruvzg/gdsdecomp/releases/latest)**
 2. Locate `webfishing.exe` inside the `WEBFISHING` folder where Webfishing is installed via Steam.
 
-![image](https://github.com/user-attachments/assets/8c0e4591-0f96-4a5f-85ad-0188d40818d6)
+![image](https://github.com/user-attachments/assets/705a5348-aa84-49ec-98cd-9be75ee1917f)
+
 
 3. Use GDRE Tools to load the `webfishing.exe` file (do not attempt to decompile the `.exe`).
 4. Do a **Full Recovery** with GDRE Tools
