@@ -5,7 +5,7 @@ This guide will walk you through the entire process of decompiling the game Webf
 ## Prerequisites
 
 - **GDRE Tools**: For decompiling the game files ([Download GDRE Tools](https://github.com/bruvzg/gdsdecomp/releases/latest))
-- **GodotSteam v3.25**: For running the decompiled game in Godot ([Download GodotSteam v3.25 For Windows](https://github.com/GodotSteam/GodotSteam/releases/download/v3.25/win64-g353-s159-gs325.zip))
+- **GodotSteam v3.21**: For running the decompiled game in Godot ([Download GodotSteam v3.21](https://github.com/GodotSteam/GodotSteam/releases/tag/v3.21))
 
 # Development Resources
 
@@ -32,7 +32,7 @@ This guide will walk you through the entire process of decompiling the game Webf
 This process will create a fully functional Godot project from the game files.
 
 ### 2. In GodotSteam, make a new project specifically for your mod,
-1. Download **[GodotSteam v3.25 for Windows](https://github.com/GodotSteam/GodotSteam/releases/download/v3.25/win64-g353-s159-gs325.zip)**.
+1. Download **[GodotSteam v3.21](https://github.com/GodotSteam/GodotSteam/releases/tag/v3.21)**.
 2. **EXTRACT** GodotSteam `win64-g353-s159-gs325.zip` and open that folder
 3. Create a new text file titled `steam_appid.txt`
 4. Open the newly created `steam_appid.txt` in notepad or your favourite text editor, and set the contents to only `3146520`, then save it.
