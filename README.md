@@ -113,6 +113,8 @@ Godot itself does not support mod loading like GDWeave does by default. To test 
 
 ![image](https://github.com/user-attachments/assets/6ab452a9-b18d-43ec-b7e6-5603e05689b6)
 
+Repeat this for any dependencies your mod has, like Lure or my Comfy APIs.
+
 The next instructions are entirely optional, but make development and finding errors in your mods MUCH EASIER by removing the game's built in print spam!!
 
 6. Make sure you're in the "Script" tab at the top middle of the screen
