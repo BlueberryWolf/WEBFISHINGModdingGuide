@@ -91,6 +91,7 @@ You can now close your mod's GodotSteam project by simply exiting GodotSteam.
 ![image](https://github.com/user-attachments/assets/97ed4320-4815-4c8f-b66e-f57e254deb91)
 
 3. You can now test the game in the editor by pressing F5!
+   - **Note**: If you are using dependencies, you may run into issues in this step. Make sure you use the official source code of any dependencies! Do **not** manually decompile them! Some mods, like Lure, contain copies of vanilla game files that they need to run with GDWeave. Having these duplicate files will make the editor throw errors every time you play the project.
 
 # 5. Make your mod!
 ### Follow this guide to make your mod!
